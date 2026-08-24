@@ -1,0 +1,33 @@
+add_newline = false
+
+format = """
+$username$hostname$directory$git_branch$git_status
+$character
+"""
+
+[username]
+show_always = true
+style_user = "bold white"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](bold white) "
+
+[directory]
+style = "bold white"
+format = "[ $path ]($style)"
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+style = "bold white"
+format = " [$symbol$branch]($style)"
+
+[git_status]
+style = "white"
+format = " [$all_status$ahead_behind]($style)"
+
+[character]
+success_symbol = "[❯](bold white)"
+error_symbol = "[❯](bold red)"

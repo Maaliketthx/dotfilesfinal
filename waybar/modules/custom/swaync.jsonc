@@ -1,0 +1,13 @@
+{
+    "custom/swaync": {
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󰂚",
+            "none": "󰂚"
+        },
+        "on-click": "swaync-client -t -sw"
+    }
+}

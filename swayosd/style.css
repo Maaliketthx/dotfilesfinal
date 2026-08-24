@@ -1,0 +1,100 @@
+/* =========================
+   EVA-01 SwayOSD Pill
+   ========================= */
+
+
+window {
+    background: rgba(17, 17, 27, 0.82);
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(203,166,247,0.55);
+
+    padding: 10px 22px;
+
+    box-shadow:
+        0px 8px 30px rgba(0,0,0,0.45),
+        0px 0px 20px rgba(203,166,247,0.15);
+}
+
+
+/* icone */
+
+image {
+    color: #cba6f7;
+
+    margin-right: 12px;
+}
+
+
+/* testo */
+
+label {
+    color: #cdd6f4;
+
+    font-family: "JetBrainsMono Nerd Font";
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* barra */
+
+progressbar {
+
+    min-height: 8px;
+
+    min-width: 180px;
+
+    border-radius: 999px;
+
+    margin-left: 12px;
+
+}
+
+
+progressbar trough {
+
+    background: rgba(255,255,255,0.12);
+
+    border-radius: 999px;
+
+}
+
+
+progressbar progress {
+
+    background: linear-gradient(
+        90deg,
+        #89b4fa,
+        #cba6f7,
+        #a6e3a1
+    );
+
+    border-radius: 999px;
+
+}
+
+
+/* mute */
+
+.muted {
+
+    color: #f38ba8;
+
+}
+
+
+/* luminosità */
+
+window.brightness progressbar progress {
+
+    background: linear-gradient(
+        90deg,
+        #cba6f7,
+        #89b4fa
+    );
+
+}

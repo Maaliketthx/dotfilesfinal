@@ -1,0 +1,154 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+tooltip {
+    background: rgba(15,15,15,0.95);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* =====================
+   ISLAND STYLE
+===================== */
+
+#workspaces,
+#clock,
+#network,
+#bluetooth,
+#window,
+#custom-rofi,
+#custom-power_btn,
+#custom-lock_screen,
+#custom-wol,
+#custom-tailscale,
+#custom-media,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#power-profiles-daemon,
+#backlight,
+#pulseaudio,
+#tray,
+#custom-swaync {
+
+    background: rgba(10,10,10,0.85);
+
+    margin: 6px 4px;
+
+    padding: 0px 12px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.10);
+}
+
+
+/* =====================
+   WORKSPACES
+===================== */
+
+#workspaces {
+    padding: 0px 8px;
+}
+
+#workspaces button {
+    color: #666;
+    padding: 0px 7px;
+    margin: 0px 3px;
+    border-radius: 12px;
+}
+
+#workspaces button.active {
+    color: #000;
+    background: #fff;
+    padding: 0px 14px;
+}
+
+#workspaces button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* =====================
+   WINDOW TITLE
+===================== */
+
+#window {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+}
+
+
+/* =====================
+   CPU / RAM
+===================== */
+
+#cpu,
+#memory {
+    color: #fff;
+}
+
+
+/* =====================
+   RIGHT MODULES
+===================== */
+
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#clock {
+    color: #fff;
+}
+
+
+/* Battery */
+
+#battery.warning {
+    color: #aaa;
+}
+
+#battery.critical {
+    color: #fff;
+}
+
+
+/* Audio */
+
+#pulseaudio.muted {
+    color: #777;
+}
+
+
+/* Network */
+
+#network.disconnected {
+    color: #777;
+}
+
+
+/* Tray */
+
+#tray {
+    padding-right: 10px;
+}
+
+
+/* Notification */
+
+#custom-swaync {
+    color: white;
+}

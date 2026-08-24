@@ -1,0 +1,7 @@
+.secrets/
+**/.secrets/
+*.token
+*.secret
+*.pem
+*.key
+.DS_Store
